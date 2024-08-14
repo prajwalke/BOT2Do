@@ -1,38 +1,116 @@
+/* App.css */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: black;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.container-1{
+  text-align: center;
+  background-color: black;
+  padding: 40px;
+  border-radius: 0;
+  width: 300px;
+}
+
+.company-name {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.signup-box {
+  border: 0.5px solid rgb(28, 26, 26);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.signup-box h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.signup-box h3 {
+  color: white;
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 15px;
+  font-weight: 15rem;
+
+
+}
+
+.input-box {
+  width: 92%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  /* Ensure input background is black */
+  color: white;
+  /* Text inside the input is white */
+}
+
+.input-box::placeholder {
+  color: #ccc;
+  /* Light grey placeholder text */
+}
+
+.otp-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.line-or {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 20px 0;
+}
+
+.line-or .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: white;
+  margin: 0 10px;
+}
+
+.icon-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.icon-button {
+  background-color: black;
+  /* Added border for better visibility */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icon-button .logo {
+  width: 24px;
+  height: 24px;
+}
+
+.signin-text {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signin-text a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
 }
